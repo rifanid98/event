@@ -1,4 +1,4 @@
-# <p align="center">Al Maktabah</p>
+# <p align="center">Event App</p>
 
 <p align="center">
   <image src="https://reactnative.dev/img/tiny_logo.png" width="300" 
