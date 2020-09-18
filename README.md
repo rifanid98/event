@@ -60,17 +60,16 @@ This page is used to manage data.
 ## Screenshots
 
 <div align="center">
-    <img width="350" src="https://github.com/rifanid98/libraryapp/blob/master/screenshots/login.png">   
-    <img width="350" src="https://github.com/rifanid98/libraryapp/blob/master/screenshots/signup.png">
+    <img width="350" src="https://github.com/rifanid98/event/blob/master/screenshots/home.png">   
+    <img width="350" src="https://github.com/rifanid98/event/blob/master/screenshots/add.png">
 </div>
 <div align="center">
-    <img width="350" src="https://github.com/rifanid98/libraryapp/blob/master/screenshots/home.png">   
-    <img width="350" src="https://github.com/rifanid98/libraryapp/blob/master/screenshots/dashboard.png">
+    <img width="350" src="https://github.com/rifanid98/event/blob/master/screenshots/dashboard.png">
 </div>
 
 ## Usage
 
--   For common users, you can access the website at [libraryapp.com]() or download the release apk at [google drive]()
+-   For common users, you can access the website at [event.com]() or download the release apk at [google drive]()
 -   For developer, you can continue to follow the instructions bellow.
 
 ### Prerequisites
@@ -87,12 +86,12 @@ Before you begin, ensure you have met the following requirements:
 -   Open your favourite terminal or command prompt (use git bash if you use windows os).
 -   Follow these command :
     ```
-    git clone https://github.com/rifanid98/libraryapp
-    cd libraryapp
+    git clone https://github.com/rifanid98/event
+    cd event
     npm install
     ```
 -   Open `env` environtment file at `src/configs/env.js`, and change following config :
-    -   change `API_URL` value to `localhost:3000/libraryapp-api`
+    -   change `API_URL` value to `localhost:3000/event-api`
     -   change `ORIGIN` value to localhost
 -   You need to install server of this app to run. Go to [Related Project](#related-project)
 -   You are ready to start.
@@ -119,7 +118,7 @@ Thanks to the following people who have contributed to this project:
 
 ## Related Project
 
--   [libraryappapi](https://github.com/rifanid98/libraryappapi) backend api for this project.
+-   [eventapi](https://github.com/rifanid98/eventapi) backend api for this project.
 -   [almaktabah](https://github.com/rifanid98/almaktabah) mobile version of Al Maktabah.
 
 ## Contact
@@ -128,4 +127,4 @@ If you want to contact me you can reach me at <adninsijawa.office@gmail.com>.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/rifanid98/libraryapp/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/rifanid98/event/blob/master/LICENSE) file for details
