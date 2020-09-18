@@ -23,7 +23,7 @@
 
 ## Introduction
 
-Libraryapp (Al Maktabah) is a `web application` that allows book lovers to borrow some books online, and looking for some books available in the library. Anyone can use this application and share it with others. Created using MERN Stack (MySQL, Express.Js, React.Js & Node.Js). Useful to make it easier for users to communicate with friends.
+Is an application that is useful for storing todo events on your local computer. Created using MERN Stack (MySQL, Express.Js, React.Js & Node.Js).
 
 ## Features
 
