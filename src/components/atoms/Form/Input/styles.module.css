@@ -1,0 +1,32 @@
+.input {
+    border: none;
+    padding: 5px;
+    flex: 1;
+    margin: 10px 10px;
+}
+
+.textarea {
+    border: none;
+    padding: 5px;
+    width: 100%;
+    margin: 5px 10px;
+}
+
+.button {
+    border: none;
+    padding: 5px;
+    flex: 1;
+    margin: 5px 5px;
+    background-color: #0f2979;
+    color: white;
+    cursor: pointer;
+}
+
+.input, .textarea, .button {
+    padding: 10px;
+}
+
+.input[type=date] {
+    color: #4d4d4d;
+    background-color: #ffffff;
+}

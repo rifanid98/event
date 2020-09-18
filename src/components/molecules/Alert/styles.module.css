@@ -1,0 +1,25 @@
+.warning {
+    position: absolute;
+    right: 20px;
+    top: 75px;
+    padding: 20px;
+    background-color: orange;
+}
+.success {
+    position: absolute;
+    right: 20px;
+    top: 75px;
+    padding: 20px;
+    background-color: rgb(18, 184, 27);
+}
+.error {
+    position: absolute;
+    right: 20px;
+    top: 75px;
+    padding: 20px;
+    background-color: orange;
+}
+.p {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}

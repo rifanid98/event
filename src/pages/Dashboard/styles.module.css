@@ -1,0 +1,107 @@
+@media (max-width: 1000px) {
+    .table, .search, .tableWrapper {
+        align-self: flex-start !important;
+    }
+    .tableWrapper {
+        justify-content: flex-start !important;
+    }
+}
+@media (max-width: 730px) {
+    .search, .pagination {
+        /* width: 100% !important; */
+    }
+    .tableWrapper {
+        justify-content: flex-start !important;
+    }
+    .table {
+        /* width: 730px !important; */
+    }
+}
+
+.container {
+    width: 100%;
+    flex: 1;
+    margin-top: 80px;
+}
+.tableWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-padding: 50px 0 0 50px;
+}
+.table {
+    font-family: 'Viga', sans-serif;
+    width: 1000px;
+    font-size: 13px;
+}
+.thead {
+    height: 100px;
+    background-color: #c4c4c4;
+}
+.tbody {
+    height: 100px;
+    background-color: #ffffff;
+}
+td {
+    word-break: break-all;
+  }
+.heading {
+    font-weight: 700;
+    padding: 15px;
+    text-align: center;
+}
+.body {
+    padding: 15px;
+    border-bottom: 3px solid #ebeef3;
+}
+.heading, .body {
+    color: #4D4D4D;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.search {
+    width: 1000px;
+}
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.p {
+    color: #4D4D4D;
+    font-family: 'Viga', sans-serif;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.p:hover {
+    background-color: #c4c4c4;
+}
+.arrowBack {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #c4c4c4;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.arrowNext {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #c4c4c4;
+    margin-left: 10px;
+    cursor: pointer;
+}

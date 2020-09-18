@@ -1,0 +1,16 @@
+/* 
+set default document height
+*/
+html,
+body {
+    height: 100% !important;
+    padding: 0 !important;
+}
+
+.container {
+    background-color: #ebeef3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
