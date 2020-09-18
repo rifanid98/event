@@ -13,6 +13,7 @@ const Input = (props) => {
             {type === "date" && <input {...props}  className={styles.input} defaultValue={today}/>}
             {type === "file" && <input {...props}  className={styles.input} />}
             {type === "button" && <button {...props}  className={styles.button} >{title}</button>}
+            {type === "reset" && <button {...props}  className={styles.reset} >{title}</button>}
         </>
     )
 }

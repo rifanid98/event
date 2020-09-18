@@ -13,13 +13,11 @@ import storage from 'redux-persist/lib/storage';
 /**
  * reducers
  */
-import auth from './auth/reducer';
-import books from "./books/reducer";
+import event from './events/reducer';
 
 // Combine The Reducers
 const reducer = combineReducers({
-  auth,
-  books,
+  event,
 })
 
 /**
@@ -29,8 +27,7 @@ const persistConfig = {
   key: 'root',
   storage,
   whitelist: [
-    "auth",
-    "books",
+    "event",
   ]
 }
 
@@ -48,8 +45,7 @@ export const store = createStore(
 /**
  * dispatcher
  */
-export * from './auth/actions';
-export * from './books/actions';
+export * from './events/actions';
 
 /**
  * selector

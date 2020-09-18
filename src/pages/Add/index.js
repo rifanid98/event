@@ -7,8 +7,13 @@ import {GoDiffAdded} from 'react-icons/go';
 import styles from './styles.module.css';
 
 import { addEvent } from 'services';
+import { useDispatch, useSelector } from 'react-redux';
+import { resetState, saveState } from 'modules';
 
 const Add = () => {
+    const state = useSelector(state => state.event.state);
+    const dispatch = useDispatch();
+
     const [title, setTitle] = useState("");
     const [location, setLocation] = useState("");
     const [participant, setParticipant] = useState("");
@@ -18,6 +23,15 @@ const Add = () => {
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
 
+    useEffect(() => {
+        checkState();
+    }, [])
+    useEffect(() => {
+        setState();
+    }, [title, location, participant, date, note, image])
+    useEffect(() => {
+        console.log(state);
+    }, [state])
     useEffect(() => {
     }, [error])
     useEffect(() => {
@@ -43,6 +57,32 @@ const Add = () => {
     }    
 
     /** Logics */
+    const checkState = () => {
+        if (state) {
+            console.log(state, 'my state');
+            setTitle(state.title);
+            setLocation(state.location);
+            setParticipant(state.participant);
+            setDate(state.date);
+            setNote(state.note);
+            setImage(state.image);
+        }
+    }
+    const setState = () => {
+        const newState = {
+            title, 
+            location,
+            participant,
+            date,
+            note,
+            image
+        }
+        dispatch(saveState(newState));
+    }
+    const clearState = () => {
+        resetForm();
+        dispatch(resetState());
+    }
     const submitEvent = async () => {
         let errors = [];
         if (date < moment().format('YYYY-MM-DD')) errors.push('"date" cannot be earlier than today');
@@ -93,6 +133,7 @@ const Add = () => {
                         <Input type="date" placeholder="Date" onChange={(e) => setDate(e.target.value)} value={date}/>
                         <Input type="textarea" placeholder="Note" onChange={(e) => setNote(e.target.value)} value={note}/>
                         <Input type="file" onChange={(e) => setImage(e.target.files[0])}/>
+                        <Input type="reset" title="clear" onClick={() => clearState()}/>
                         <Input type="button" title="Add" onClick={() => submitEvent()}/>
                     </form>
                 </div>
